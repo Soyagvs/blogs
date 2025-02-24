@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  date: string;
+  img: string;
+}
+const { title, date, img } = Astro.props;
+---
+
+<div class="flex flex-col justify-center items-start w-[450px] mt-10 ">
+  <div class="border border-black w-[450px] h-64 rounded-xl mx-auto bg-white">
+    <img src={img} alt="" />
+  </div>
+  <div class="">
+    <h2 class="mt-5 text-white font-semibold text-4xl">{title}</h2>
+    <h3 class="text-[#D9D9D9] font-thin">{date}</h3>
+  </div>
+</div>
