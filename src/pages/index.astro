@@ -1,8 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
+import Layout from "../layouts/Layout.astro";
+import AllPosts from "../sections/AllPosts.astro";
+import Hero from "../sections/Hero.astro";
+import News from "../sections/News.astro";
 ---
 
 <Layout title="" description="">
-hola
+  <main>
+    <Hero />
+    <News />
+    <AllPosts />
+  </main>
 </Layout>
